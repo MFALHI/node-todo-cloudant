@@ -1,0 +1,11 @@
+applications:
+- name:      todomanuapp123
+
+# you may need to use a different hostname, if someone has already used this one
+
+  host:      todomanuapp123
+  command:   node server
+  memory:    128M
+  instances: 1
+services:
+- demoappmanu123-cloudantNoSQLDB
