@@ -4,6 +4,11 @@
   "description": "Demo Bluemix todo application.",
   "main": "server.js",
   "author": "Manu (reusing source code found on the web)",
+  "license": "edevregille",
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/edevregille/node-todo-cloudant.git"
+  },
   "dependencies": {
     "body-parser": "~1.4.3",
     "cloudant": "^1.4.1",
