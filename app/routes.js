@@ -37,22 +37,22 @@ function initDBConnection() {
 		}
 	} else{
 		console.warn('VCAP_SERVICES environment variable not set - data will be unavailable to the UI');
-		dbCredentials.host = "";
-		dbCredentials.port = 443;
-		dbCredentials.user = "";
-		dbCredentials.password = "";
-		dbCredentials.url = "";
-		cloudant = require('cloudant')(dbCredentials.url);
+		//dbCredentials.host = "";
+		//dbCredentials.port = 443;
+		//dbCredentials.user = "";
+		//dbCredentials.password = "";
+		//dbCredentials.url = "";
+		//cloudant = require('cloudant')(dbCredentials.url);
 				
 		// check if DB exists if not create
-		cloudant.db.create(dbCredentials.dbName, function (err, res) {
-			if (err) { 
-				console.log('could not create db ', err); 
-			}
-		});
+		//cloudant.db.create(dbCredentials.dbName, function (err, res) {
+		//	if (err) { 
+		//		console.log('could not create db ', err); 
+		//	}
+		//});
 			
-		db = cloudant.use(dbCredentials.dbName);
-		console.log('SUCCESS creation of the DB');
+		//db = cloudant.use(dbCredentials.dbName);
+		//console.log('SUCCESS creation of the DB');
 	}
 }
 
